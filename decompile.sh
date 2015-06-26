@@ -7,7 +7,7 @@ if [ $# == 1 ]; then
 elif [ $# == 2 ]; then
 	tmp=$2
 else
-	echo "too many parameters \nUsage: sh "$0" apk_file_name result_path"
+	echo "too many parameters \nUsage: sh "$0" apk_file_name relative_result_path"
 	exit 1
 fi
 
@@ -41,26 +41,30 @@ rm -f $name_zip
 
 classes_dex=$tmp$name"/classes.dex"
 #dex2jar location
-dex2jar_path="/users/tanggod/android/apkdecompile/dex2jar-0.0.9.13/"
+dex2jar_path=$home_path"/dex2jar-0.0.9.13/"
 cp $classes_dex $dex2jar_path
 
 rm -rdf $tmp$name
 
 #cd $dex2jar_path
 echo "3 ===========>dex2jar file.... [classes_dex]"
-dex2jar_sh="/users/tanggod/android/apkdecompile/dex2jar-0.0.9.13/"
+dex2jar_sh=$home_path"/dex2jar-0.0.9.13/"
 #sh $dex2jar_sh"dex2jar.sh" $dex2jar_sh"classes.dex"
 sh $dex2jar_sh"d2j-dex2jar.sh" $dex2jar_sh"classes.dex"
 
 apk_jar_file=$home_path"/classes-dex2jar.jar"
-cp -f $apk_jar_file $home_path"/"$tmp$name"_classes-dex2jar.jar" 
+mv -f $apk_jar_file $home_path"/"$tmp$name"_classes-dex2jar.jar" 
 
 #apk tool
-echo "4 ===========>uncompile resource file to ["$tmp$name"-res]"
-apktool_path="/Users/tanggod/Android/apkdecompile/apktool/"
+echo "4 ===========>decompile resource file to ["$tmp$name"-res]"
+apktool_path=$home_path"/apktool/"
 apktool=$apktool_path"apktool"
 #sh $apktool d $home_path"/"$apk_file $home_path"/"$tmp$name"-res"
-sh $apktool d $apk_file $home_path"/"$tmp$name"-res"
+res_file=$home_path"/"$tmp$name"-res"
+
+# remove old res file
+rm -rf $res_file
+sh $apktool d $apk_file $res_file
 echo "***********************************************************"
-echo "***   uncompile successfully -- by tanggod@gmail.com    ***"
+echo "***   decompile successfully -- by tanggod@gmail.com    ***"
 echo "***********************************************************"

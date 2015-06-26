@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:icon="@drawable/ic_menu_maplayers" android:id="@id/action_search" android:title="Hej" android:showAsAction="never" />
-    <item android:icon="@drawable/ic_menu_maplayers" android:id="@id/action_compose" android:title="Bastu" android:showAsAction="never" />
-</menu>
