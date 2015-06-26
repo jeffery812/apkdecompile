@@ -25,3 +25,8 @@ proguard/
 
 # Log Files
 *.log
+
+
+# ignore api and data folder
+apk/
+data/
