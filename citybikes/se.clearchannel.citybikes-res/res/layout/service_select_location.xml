@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/bike_service_hotspot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <ImageView android:id="@id/bike_hotspot" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/bike_hotspot" android:adjustViewBounds="true" />
+            <ImageView android:id="@id/bike_image_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/bike_service" android:adjustViewBounds="true" />
+        </FrameLayout>
+        <Button android:layout_gravity="center" android:id="@id/select_problem" android:background="@drawable/blue" android:layout_marginTop="5.0dip" android:text="@string/select_error_label" style="@style/service_buttons" />
+        <Spinner android:id="@id/service_locations_spinner" android:paddingTop="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:layout_gravity="left|center" android:id="@id/service_lock_number" android:background="@drawable/blue" android:text="@string/service_lock_number_text" style="@style/service_buttons" />
+        <Button android:layout_gravity="center" android:id="@id/service_photo_button" android:background="@drawable/blue" android:paddingTop="1.0dip" android:text="@string/attach_picture_label" style="@style/service_buttons" />
+        <EditText android:id="@id/service_other_info_text" android:paddingTop="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/service_other_information" android:maxLength="240" android:inputType="text" />
+        <Button android:layout_gravity="center" android:id="@id/submit_report_button" android:background="@drawable/green" android:paddingTop="1.0dip" android:text="@string/service_send_report" style="@style/service_buttons" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="action_bar_activity_content" />
+    <item type="id" name="action_menu_divider" />
+    <item type="id" name="action_menu_presenter" />
+    <item type="id" name="home" />
+    <item type="id" name="progress_circular" />
+    <item type="id" name="progress_horizontal" />
+    <item type="id" name="action_bar_root">false</item>
+    <item type="id" name="action_bar_container">false</item>
+    <item type="id" name="action_bar">false</item>
+    <item type="id" name="action_context_bar">false</item>
+    <item type="id" name="split_action_bar">false</item>
+    <item type="id" name="action_bar_overlay_layout">false</item>
+    <item type="id" name="top_action_bar">false</item>
+    <item type="id" name="up">false</item>
+    <item type="id" name="action_bar_title">false</item>
+    <item type="id" name="action_bar_subtitle">false</item>
+    <item type="id" name="action_mode_close_button">false</item>
+    <item type="id" name="activity_chooser_view_content">false</item>
+    <item type="id" name="expand_activities_button">false</item>
+    <item type="id" name="image">false</item>
+    <item type="id" name="default_activity_button">false</item>
+    <item type="id" name="list_item">false</item>
+    <item type="id" name="icon">false</item>
+    <item type="id" name="title">false</item>
+    <item type="id" name="expanded_menu">false</item>
+    <item type="id" name="checkbox">false</item>
+    <item type="id" name="shortcut">false</item>
+    <item type="id" name="radio">false</item>
+    <item type="id" name="edit_query">false</item>
+    <item type="id" name="search_bar">false</item>
+    <item type="id" name="search_badge">false</item>
+    <item type="id" name="search_button">false</item>
+    <item type="id" name="search_edit_frame">false</item>
+    <item type="id" name="search_mag_icon">false</item>
+    <item type="id" name="search_plate">false</item>
+    <item type="id" name="search_src_text">false</item>
+    <item type="id" name="search_close_btn">false</item>
+    <item type="id" name="submit_area">false</item>
+    <item type="id" name="search_go_btn">false</item>
+    <item type="id" name="search_voice_btn">false</item>
+    <item type="id" name="about_webview">false</item>
+    <item type="id" name="pager">false</item>
+    <item type="id" name="balloon_main_layout">false</item>
+    <item type="id" name="balloon_inner_layout">false</item>
+    <item type="id" name="balloon_item_title">false</item>
+    <item type="id" name="location_bikes">false</item>
+    <item type="id" name="location_noOfBikes">false</item>
+    <item type="id" name="location_freeSlots">false</item>
+    <item type="id" name="location_noOfFree">false</item>
+    <item type="id" name="section_label">false</item>
+    <item type="id" name="dummy1">false</item>
+    <item type="id" name="dummy2">false</item>
+    <item type="id" name="dummy3">false</item>
+    <item type="id" name="list_header_distance">false</item>
+    <item type="id" name="list_header_freeSlots">false</item>
+    <item type="id" name="list_header_bikes">false</item>
+    <item type="id" name="list_item_rack_description">false</item>
+    <item type="id" name="list_item_rack_empty_slots">false</item>
+    <item type="id" name="list_item_rack_available_bikes">false</item>
+    <item type="id" name="list_item_rack_distance">false</item>
+    <item type="id" name="map_bubble_main_layout">false</item>
+    <item type="id" name="location_name">false</item>
+    <item type="id" name="location_map">false</item>
+    <item type="id" name="map">false</item>
+    <item type="id" name="bike_service_hotspot">false</item>
+    <item type="id" name="bike_hotspot">false</item>
+    <item type="id" name="bike_image_default">false</item>
+    <item type="id" name="select_problem">false</item>
+    <item type="id" name="service_locations_spinner">false</item>
+    <item type="id" name="service_lock_number">false</item>
+    <item type="id" name="service_photo_button">false</item>
+    <item type="id" name="service_other_info_text">false</item>
+    <item type="id" name="submit_report_button">false</item>
+    <item type="id" name="action_settings">false</item>
+    <item type="id" name="action_search">false</item>
+    <item type="id" name="action_compose">false</item>
+</resources>
