@@ -13,5 +13,4 @@ gen/
 
 
 # ignore api and data folder
-apk/
-data/
+slbiljetter/
