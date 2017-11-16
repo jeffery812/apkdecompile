@@ -66,7 +66,9 @@ apktool=$home_path"/bin/apktool/apktool"
 res_file=$output_path"/"$tmp$name"-res"
 
 # remove old res file
-rm -rf $res_file
+# rm -rf $res_file
+echo ">> generate resource files...."
+echo sh $apktool d $apk_file $res_file
 sh $apktool d $apk_file $res_file
 echo "***********************************************************"
 echo "***   decompile complete -- by tanggod@gmail.com    ***"
